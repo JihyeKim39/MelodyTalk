@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melody Talk</title>
+  <link rel="stylesheet" href="./main.css">
+  <title>Like Button Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- <script src="https://kit.fontawesome.com/a37a75c280.js", crossorigin="anonymous"> -->
+  <script src="https://kit.fontawesome.com/a37a75c280.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- 로고 -->
+  <nav class="navbar">
+    <div class="navbar_logo">
+      <i class="Melody TALK"></i>
+      <h1><img src="./images/melody.jpg" alt="melody"
+          style="width: 30px; height: 30px; vertical-align: middle; border-radius: 50%;"> Melody
+        TALK</h1>
+
+      <!-- 메뉴바 -->
+      <div class="navbar_items">
+
+
+      </div>
+
+      <div id="root">
+        <h3><img src="./images/home.png" alt="home" style="width: 20px; height: 20px; ">홈</h3>
+        <h3><img src="./images/profile.png" alt="profile" style="width: 20px; height: 20px; ">프로필</h3>
+        <div id="add">
+          <h3><img src="./images/add.png" alt="add" style="width: 20px; height: 20px; ">만들기</h3>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- 로그인  -->
+    <h6>로그인</h6>
+  </nav>
+
+  <!-- 검색창 -->
+  <section>
+    <form class="search-box" action="" method="get">
+      <input class="search-txt" type="text" name="" placeholder="검색어를 입력하세요.">
+      <button class="search-btn" type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+    </form>
+
+    <!-- 포스팅 박스 -->
+    <div class="posting-box">
+      <div class="posting"></div>
+      <div class="post">
+        <i class="far fa-heart like" onclick="toggleLike(this)"></i>
+      </div>
+
+      <script>
+        function toggleLike(element) {
+          element.classList.toggle('far');
+          element.classList.toggle('fas');
+          element.classList.toggle('liked');
+        }
+      </script>
+
+      <p>집에 가고 싶어용!!!!!...</p>
+
+
+      <!-- 댓글 기능 -->
+      <div class="comments">
+        <div id="comments-list">
+          <!-- Comments will appear here -->
+        </div>
+        <textarea id="comment-input" placeholder="Add comment"></textarea>
+      </div>
+      <button class="custom-button" onclick="postComment()">Add</button>
+
+
+      <!-- <button onclick="postComment()">Add</button> -->
+
+
+      <div class="posting"></div>
+
+      <div class="post">
+        <i class="far fa-heart like" onclick="toggleLike(this)"></i>
+      </div>
+
+      <script>
+        function toggleLike(element) {
+          element.classList.toggle('far');
+          element.classList.toggle('fas');
+          element.classList.toggle('liked');
+        }
+      </script>
+      <p>IT 시간 너무 힘들어요ㅠㅠ</p>
+      <!-- 댓글 기능 -->
+      <div class="comments">
+        <div id="comments-list">
+          <!-- Comments will appear here -->
+        </div>
+        <textarea id="comment-input" placeholder="Add comment"></textarea>
+      </div>
+      <button class="custom-button" onclick="postComment()">Add</button>
+
+
+      <div class="posting"></div>
+      <div class="post">
+        <i class="far fa-heart like" onclick="toggleLike(this)"></i>
+      </div>
+
+      <script>
+        function toggleLike(element) {
+          element.classList.toggle('far');
+          element.classList.toggle('fas');
+          element.classList.toggle('liked');
+        }
+      </script>
+      <p>집에 언제 갈까? </p>
+      <!-- 댓글 기능 -->
+      <div class="comments">
+        <div id="comments-list">
+          <!-- Comments will appear here -->
+        </div>
+        <textarea id="comment-input" placeholder="Add comment"></textarea>
+      </div>
+      <button class="custom-button" onclick="postComment()">Add</button>
+
+
+      <div class="posting"></div>
+      <div class="post">
+        <i class="far fa-heart like" onclick="toggleLike(this)"></i>
+      </div>
+
+      <script>
+        function toggleLike(element) {
+          element.classList.toggle('far');
+          element.classList.toggle('fas');
+          element.classList.toggle('liked');
+        }
+      </script>
+      <p>여행 가고 싶다! </p>
+      <!-- 댓글 기능 -->
+      <div class="comments">
+        <div id="comments-list">
+          <!-- Comments will appear here -->
+        </div>
+        <textarea id="comment-input" placeholder="Add comment"></textarea>
+      </div>
+      <button class="custom-button" onclick="postComment()">Add</button>
+
+      <div class="posting"></div>
+      <div class="post">
+        <i class="far fa-heart like" onclick="toggleLike(this)"></i>
+      </div>
+
+      <script>
+        function toggleLike(element) {
+          element.classList.toggle('far');
+          element.classList.toggle('fas');
+          element.classList.toggle('liked');
+        }
+      </script>
+      <p>빨리 집에 가고 싶다...</p>
+      <!-- 댓글 기능 -->
+      <div class="comments">
+        <div id="comments-list">
+          <!-- Comments will appear here -->
+        </div>
+        <textarea id="comment-input" placeholder="Add comment"></textarea>
+      </div>
+      <button class="custom-button" onclick="postComment()">Add</button>
+
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>게시물 업로드</p>
+        <button type="button" class="upload_btn">업로드</button>
+
+       
+
+    </div>
+
+
+  </section>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

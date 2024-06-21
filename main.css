@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+h1 {
+  vertical-align: middle;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h3 {
+  padding: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 60px;
+  font-style: normal;
+}
+
+
+.search-box {
+  align-items: center;
+  display: flex;
+  border: 1px solid #ccc;
+  width: 60%;
+  height: 15px;
+  margin: 20px 20px 20px 50px;
+  padding: 10px 0px 10px 10px;
+  border-radius: 3px;
+}
+
+.search-btn {
+  color: grey;
+  background-color: white;
+  border-color: white;
+  font-size: 10px;
+  float: left;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  vertical-align: middle;
+}
+
+
+.search-txt {
+  border: none;
+  flex-grow: 1;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 60px;
+  font-style: normal;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+.posting-box {
+  overflow: auto;
+  width: 100%;
+  height: 80%;
+
+}
+
+.posting-box p {
+  width: 61%;
+  padding: auto;
+  margin-left: 45px;
+  font-size: small;
+
+}
+
+h2{
+  text-align: center;
+}
+
+
+.like {
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc;
+  margin-left: 45px;
+}
+
+.liked {
+  color: #e74c3c;
+}
+
+
+nav {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 270px;
+}
+
+.comments textarea {
+  width: 60%;
+  margin-top: 10px;
+  margin-left: 45px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100%;
+  font-style: normal;
+
+}
+
+.custom-button {
+  margin-left: 44px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100%;
+  font-style: normal;
+}
+
+
+
+.comment {
+  background: #f0f0f0;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+h6 {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.posting {
+  width: 60%;
+  height: 300px;
+  background-color: grey;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  text-align: center;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 40%;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,1);
+  z-index: 1000;
+}
+
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 18px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#add {
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.upload_btn {
+  background-color: grey; /* 배경색 설정 */
+  color: white; /* 텍스트 색상 설정 */
+  border-radius: 4px;
+  padding: 7px; /* 내부 여백 설정 */
+  border: none; /* 테두리 없음 */
+  cursor: pointer; /* 커서 모양 변경 */
+}
+
+.upload_btn:hover {
+  background-color: black; /* 호버 시 배경색 변경 */
+}
